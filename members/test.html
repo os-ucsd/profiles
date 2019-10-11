@@ -17,17 +17,23 @@
   </head>  
   <body>
     <div class="header">
-      <button>
-        fuck my life
-      </button>
       <h1 class="header-text">
         Hi, my name is Test
+      </h1>
+      <p class="subheader-text">
+        Welcome to my crib
+      </p>
+    </div>
+    <div class="description">
+      <h1>
+        I smoke weed
       </h1>
     </div>
     
     <script>
       $(document).ready(function(){
-        $(".header").fadeIn('slow');
+        $(".header").hide().fadeIn(3500);   
+        $(".description").slideUp();
       })
     </script>
   </body>

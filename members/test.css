@@ -12,6 +12,14 @@ body.fade{
 .header{
   display: flex;
   font-family: 'Poppins', san-serif;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  text-align: center;
+}
+
+.description{
+  font-family: 'Poppins', san-serif;
   justify-content: center;
   padding: 100px;
   text-align: center;
