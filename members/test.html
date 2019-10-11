@@ -15,10 +15,18 @@
     
   </head>  
   <body>
+    <script>
+      document.body.className = 'fade';
+    </script>
     <div class="header">
       <h1 class="header-text">
         Hi, my name is Test
       </h1>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e){
+        document.body.className = '';
+      });
+    </script>
   </body>
 </html>
