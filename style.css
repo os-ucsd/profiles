@@ -5,7 +5,20 @@ body {
   margin: 2em;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+.header{
+  background-color: #40407A;
+  padding: 50px;
+}
+
+.header-text{
+  color: white;
+  font-family: 'Poppins, sans-serif';
+  font-size: 50px;
+  text-align: center;
+}
+
+.subheader-text{
+  color: white;
+  font-family: 'Poppins, sans-serif';
+  text-align: center;
 }
