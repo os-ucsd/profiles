@@ -1,5 +1,6 @@
 /* CSS for test.html */
 body{
+  margin: 0;
   opacity: 1;
   transition: 0.7s opacity;
 }
@@ -10,18 +11,22 @@ body.fade{
 }
 
 .header{
+  background-color: #4FA8B6;
+  color: white;
   display: flex;
   font-family: 'Poppins', san-serif;
   flex-direction: column;
   justify-content: center;
-  padding: 100px;
+  padding: 85px;
   text-align: center;
 }
 
 .description{
   font-family: 'Poppins', san-serif;
   justify-content: center;
-  padding: 100px;
+  padding: 0 100px;
+  margin-left: 200px;
+  margin-right: 200px;
   text-align: center;
 }
 
