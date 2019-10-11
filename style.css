@@ -1,10 +1,4 @@
 /* CSS files add styling rules to your content */
-
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
-}
-
 .header{
   background-color: #40407A;
   padding: 50px;
@@ -12,9 +6,22 @@ body {
 
 .header-text{
   color: white;
-  font-family: 'Poppins, sans-serif';
+  font-family: 'Roboto, sans-serif';
   font-size: 50px;
   text-align: center;
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Roboto, sans-serif';
+  justify-content: center;
+}
+
+.profile{
+  margin: 3em;
+  font-size: 20px
 }
 
 .subheader-text{
