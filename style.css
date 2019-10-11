@@ -1,7 +1,21 @@
 /* CSS files add styling rules to your content */
+body{
+  height: 100%;  
+  margin: 0;
+}
+
 .header{
+  /* parallax stuff lol u can get rid of this if u dont want it */
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel-bg.jpg?v=1570760777123");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   background-color: #40407A;
-  padding: 50px;
+  /* padding: 50px; */
+  justify-content: center;
 }
 
 .header-text{
@@ -16,6 +30,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   font-family: 'Roboto, sans-serif';
+  height: 100vh;
   justify-content: center;
 }
 
