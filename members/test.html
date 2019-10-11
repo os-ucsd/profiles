@@ -12,21 +12,23 @@
     <!-- import the font Poppins and Roboto from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    
+    <!-- jquery for animations! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>  
   <body>
-    <script>
-      document.body.className = 'fade';
-    </script>
     <div class="header">
+      <button>
+        fuck my life
+      </button>
       <h1 class="header-text">
         Hi, my name is Test
       </h1>
     </div>
+    
     <script>
-      document.addEventListener("DOMContentLoaded", function(e){
-        document.body.className = '';
-      });
+      $(document).ready(function(){
+        $(".header").fadeIn('slow');
+      })
     </script>
   </body>
 </html>
