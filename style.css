@@ -1,11 +1,31 @@
 /* CSS files add styling rules to your content */
 /* determines distance the particle will travel */
 @keyframes shootingStar{
+  0%{
+    width: 0;
+  }
+  30%{
+    width: 100px;
+  }
+  100%{
+    width: 0;
+  }
+  /*
   from{
     left: -100px;
   }
   to{
     left: calc(100% + 100px);
+  }
+  */
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(320px);
   }
 }
 
@@ -47,12 +67,14 @@ body{
   height: 1px;
   background-color: white;
   position: fixed;
-  animation-name: shootingStar;
+  animation-name: shooting;
   /* play animation at same speed from start to end */
   animation-timing-function: linear;
   /* number of times to run animation */
   animation-iteration-count: infinite; 
   animation-duration: 4s;
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
 }
 
 .p::before{
@@ -64,6 +86,7 @@ body{
   top:0px;
   height:1px;
   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+  transform: translateX(50%) rotateZ(45deg);
 }
 
 .profile-container{
