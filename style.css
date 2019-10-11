@@ -1,14 +1,4 @@
 /* CSS files add styling rules to your content */
-/* determines distance the particle will travel */
-@keyframes shooting {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(320px);
-  }
-}
-
 body{
   height: 100%;  
   margin: 0;
@@ -36,39 +26,6 @@ body{
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
-}
-
-/* creates the actual shooting star */
-.p{
-  position: fixed;
-  left: 0px;
-  top: calc(50% - 1px);
-  width: 1px;
-  height: 1px;
-  background-color: white;
-  position: fixed;
-  animation-name: shooting;
-  /* play animation at same speed from start to end */
-  animation-timing-function: linear;
-  /* number of times to run animation */
-  animation-iteration-count: infinite; 
-  animation-duration: 4s;
-}
-
-.p::before{
-  position:absolute;
-  display:block;
-  content:"";
-  width:100px;
-  right:0;
-  top:0px;
-  height:1px;
-  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
-  transform: translateX(50%) rotateZ(45deg);
-}
-
-.p::after{
-  transform: translateX(50%) rotateZ(-45deg);  
 }
 
 .profile-container{
