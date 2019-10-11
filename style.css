@@ -38,8 +38,10 @@ body{
 }
 
 .profile{
+  color: black;
   margin: 3em;
-  font-size: 20px
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .subheader-text{

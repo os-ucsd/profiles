@@ -1,0 +1,9 @@
+/* CSS for test.html */
+.header{
+  display: flex;
+  font-family: 'Poppins', san-serif;
+  justify-content: center;
+  padding: 100px;
+  text-align: center;
+}
+
