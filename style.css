@@ -13,16 +13,19 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 
+  /* to align elements vertically and horizontally */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
   background-color: #40407A;
   /* padding: 50px; */
-  justify-content: center;
 }
 
 .header-text{
   color: white;
   font-family: 'Roboto, sans-serif';
   font-size: 50px;
-  text-align: center;
 }
 
 .profile-container{
