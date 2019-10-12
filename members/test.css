@@ -12,12 +12,7 @@ body.fade{
 
 .description-container{
   font-family: 'Poppins', san-serif;
-  /* to align elements vertically and horizontally */
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  
 }
 
 .header{
@@ -36,6 +31,11 @@ body.fade{
   margin-left: 200px;
   margin-right: 200px;
   padding: 0 100px;
+  /* to align elements vertically and horizontally */
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .p{
