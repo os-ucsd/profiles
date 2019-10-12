@@ -1,4 +1,6 @@
-/* CSS for test.html */
+/* CSS for brendan.html. Use this as a template for any styles you like! */
+
+/* make the body fade in when the app starts */
 body{
   margin: 0;
   opacity: 1;
@@ -16,6 +18,7 @@ body.fade{
 }
 
 .header{
+  /* creating the parallax effect for the header */
   background-attachment: fixed;
   background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel-bg.jpg?v=1570760777123");
   background-color: #4FA8B6;
@@ -23,6 +26,7 @@ body.fade{
   background-repeat: no-repeat;
   background-size: cover;
   
+  /* setting styles for the text in the header */
   color: white;
   display: flex;
   font-family: 'Poppins', san-serif;
@@ -33,10 +37,12 @@ body.fade{
 }
 
 .d{
+  /* set the margins of the description text*/
   margin-left: 200px;
   margin-right: 200px;
   padding: 0 100px;
   height: 100vh;
+  
   /* to align elements vertically and horizontally */
   text-align: center;
   align-items: center;
@@ -46,6 +52,7 @@ body.fade{
 }
 
 .p{
+  /* create the parallax effect of the middle image */
   background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel.jpg?v=1570761776514");
   height: 100vh;
   background-attachment: fixed;
