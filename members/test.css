@@ -12,8 +12,11 @@ body.fade{
 
 .description-container{
   font-family: 'Poppins', san-serif;
-  justify-content: center;
+  /* to align elements vertically and horizontally */
   text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header{
@@ -25,10 +28,10 @@ body.fade{
   justify-content: center;
   padding: 85px;
   text-align: center;
+  height: 100vh;
 }
 
 .intro{
-  height: 50vh;
   margin-left: 200px;
   margin-right: 200px;
   padding: 0 100px;
