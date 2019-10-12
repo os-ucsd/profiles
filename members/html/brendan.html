@@ -28,7 +28,7 @@
       </p>
     </div>
     <div class="description-container">
-      <div class="intro d">
+      <div class="intro d scroll">
         <h1>
           I major in computer engineering.
         </h1>
@@ -37,7 +37,7 @@
         </h3>
       </div>
       <div class="p"></div>
-      <div class="interests d">
+      <div class="interests d scroll">
         <h1>
           I'm watching Demon Slayer right now
         </h1>
@@ -49,11 +49,20 @@
     
     <!-- javascript for animating the fade ins for each component -->
     <script>
+      // allows fading of header in after loading
       $(document).ready(function(){
-        $(".header").hide().fadeIn(3500);   
-        $(".intro").hide().delay(1500).fadeIn(2000);
-        $(".p").hide().delay(2000).fadeIn(2000);
-        $("interests").hide().delay(2500).fadeIn(2000);
+        $(".header").hide().fadeIn(3500);  
+        
+      // allows fade the elements in while scrolling down
+      $(window).scroll(function(){
+        $(".scroll").each(function(i){
+          let bottom_of_object = $(this).position().top + $(this).outerHeight();
+          let bottom_of_window = $(window).scrollTop() + ($(window).height() + 100);
+          if( bottom_of_window >= bottom_of_object ){
+            $(this).animate({'opacity':'1'}, 800);          
+          }
+        })
+      })
       });
     </script>
   </body>

@@ -1,16 +1,9 @@
 /* CSS for brendan.html. Use this as a template for any styles you like! */
 
-/* make the body fade in when the app starts */
 body{
   margin: 0;
-  opacity: 1;
-  transition: 0.7s opacity;
 }
 
-body.fade{
-  opacity: 0;
-  transition: none;
-}
 
 .description-container{
   font-family: 'Poppins', san-serif;
@@ -59,5 +52,9 @@ body.fade{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.scroll{
+  opacity: 0;
 }
 
