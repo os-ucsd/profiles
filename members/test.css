@@ -16,6 +16,7 @@ body.fade{
 }
 
 .header{
+  background-attachment: fixed;
   background-color: #4FA8B6;
   color: white;
   display: flex;
@@ -27,19 +28,25 @@ body.fade{
   height: 100vh;
 }
 
-.intro{
+.interest{
+  
+}
+
+.d{
   margin-left: 200px;
   margin-right: 200px;
   padding: 0 100px;
+  height: 100vh;
   /* to align elements vertically and horizontally */
   text-align: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .p{
-  background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel.jpg?v=1570761776514");
+  background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel-bg.jpg?v=1570760777123");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
