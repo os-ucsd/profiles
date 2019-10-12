@@ -17,6 +17,7 @@ body.fade{
 
 .header{
   background-attachment: fixed;
+  background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel-bg.jpg?v=1570760777123");
   background-color: #4FA8B6;
   color: white;
   display: flex;
@@ -26,10 +27,6 @@ body.fade{
   padding: 85px;
   text-align: center;
   height: 100vh;
-}
-
-.interest{
-  
 }
 
 .d{
@@ -46,7 +43,7 @@ body.fade{
 }
 
 .p{
-  background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel-bg.jpg?v=1570760777123");
+  background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel.jpg?v=1570761776514");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
