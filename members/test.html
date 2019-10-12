@@ -18,7 +18,7 @@
   <body>
     <div class="header">
       <h1 class="header-text">
-        Hi, my name is Test
+        Hi, my name is Brendan 
       </h1>
       <p class="subheader-text">
         Welcome to my crib
@@ -27,28 +27,31 @@
     <div class="description-container">
       <div class="intro d">
         <h1>
-          I am a computer.
+          I major in computer engineering.
         </h1>
         <h3>
-          I do computer things. Lorem phantom dem cam sham. Demon slayer
+          It's a cool major.
         </h3>
       </div>
       <div class="p"></div>
       <div class="interests d">
         <h1>
-          Pika pika
+          I'm watching Demon Slayer right now
         </h1>
         <h3>
-          I am interest.
+          I'm on episode 7, so don't spoil anything to me :(
         </h3>
       </div>
     </div>
     
+    <!-- javascript for animating the fade ins for each component -->
     <script>
       $(document).ready(function(){
         $(".header").hide().fadeIn(3500);   
         $(".intro").hide().delay(1500).fadeIn(2000);
-      })
+        $(".p").hide().delay(2000).fadeIn(2000);
+        $("interests").hide().delay(2500).fadeIn(2000);
+      });
     </script>
   </body>
 </html>

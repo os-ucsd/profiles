@@ -19,12 +19,15 @@ body.fade{
   background-attachment: fixed;
   background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel-bg.jpg?v=1570760777123");
   background-color: #4FA8B6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   color: white;
   display: flex;
   font-family: 'Poppins', san-serif;
   flex-direction: column;
   justify-content: center;
-  padding: 85px;
   text-align: center;
   height: 100vh;
 }
