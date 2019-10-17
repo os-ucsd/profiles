@@ -44,7 +44,7 @@ body{
   justify-content: center;
 }
 
-.p{
+.parallax{
   /* create the parallax effect of the middle image */
   background-image: url("https://cdn.glitch.com/655b3491-e8e1-48f4-b593-f9ed911f67bc%2Fgeisel.jpg?v=1570761776514");
   height: 100vh;
