@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Open Source @ UCSD</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../css/elias.css">
+    
+    <!-- import the font Poppins and Roboto from Google Fonts 
+         if you want to find your own fonts, visit https://fonts.google.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- jquery for animations! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>  
+  <body>
+    <div class="header">
+      <h1 class="header-text">
+        Hi, my name is Brendan Lau
+      </h1>
+      <p class="subheader-text">
+        Welcome to my crib
+      </p>
+    </div>
+    <div class="description-container">
+      <div class="intro d scroll">
+        <h1>
+          I major in Computer Engineering.
+        </h1>
+        <h3>
+          I live in Warren College.
+        </h3>
+      </div>
+      <div class="parallax"></div>
+      <div class="interests d scroll">
+        <h1>
+          I'm on episode 21 on Demon Slayer. IT'S LIT.
+        </h1>
+        <h3>
+          Don't spoil the rest for me :(
+        </h3>
+      </div>
+    </div>
+    
+    <!-- javascript for animating the fade ins for each component -->
+    <script>
+      // allows fading of header in after loading
+      $(document).ready(function(){
+        $(".header").hide().fadeIn(2500);  
+        
+      // allows fade the elements in while scrolling down
+      $(window).scroll(function(){
+        $(".scroll").each(function(i){
+          let bottom_of_object = $(this).position().top + $(this).outerHeight();
+          let bottom_of_window = $(window).scrollTop() + ($(window).height() + 200);
+          if( bottom_of_window >= bottom_of_object ){
+            $(this).animate({'opacity':'1'}, 800);          
+          }
+        })
+      })
+      });
+    </script>
+  </body>
+</html>
